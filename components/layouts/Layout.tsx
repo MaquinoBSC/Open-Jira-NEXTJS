@@ -2,6 +2,7 @@ import { FC } from "react";
 import Head from "next/head";
 
 import { Box } from "@mui/material";
+import { Navbar } from "../ui";
 
 
 interface Props {
@@ -16,7 +17,7 @@ export const Layout: FC <Props> = ({ title= "Open Jira", children }) => {
                 <title>{ title }</title>
             </Head>
 
-            {/* Navbar */}
+            <Navbar />
             {/* Sidebar */}
 
             <Box sx={{ padding: '10px 20px' }}>
